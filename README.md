@@ -212,5 +212,5 @@ npm run dev
 
 ## Bonus Features Implemented
 
- Real-time sync across tabs using `chrome.storage.onChanged`
- Export data as CSV or JSON
+ - Real-time sync across tabs using `chrome.storage.onChanged`
+ - Export data as CSV or JSON
