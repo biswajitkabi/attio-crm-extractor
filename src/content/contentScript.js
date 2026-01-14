@@ -1,6 +1,3 @@
-// COMPLETE REWRITE - Attio CRM Extractor with Better Detection
-// File: src/content/contentScript.js
-
 class ExtractionIndicator {
   constructor() {
     this.container = null;

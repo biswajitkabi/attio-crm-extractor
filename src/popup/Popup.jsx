@@ -56,7 +56,7 @@ const Popup = () => {
       const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
       
       if (!tab.url.includes('attio.com')) {
-        setMessage('❌ Please navigate to an Attio page first');
+        setMessage(' Please navigate to an Attio page first');
         setIsExtracting(false);
         return;
       }
@@ -141,7 +141,7 @@ const Popup = () => {
               ...(isExtracting ? styles.buttonDisabled : {})
             }}
           >
-            {isExtracting ? '⏳ Extracting...' : '📥 Extract Now'}
+            {isExtracting ? ' Extracting...' : ' Extract Now'}
           </button>
           <ExportButton data={data} />
         </div>
@@ -156,7 +156,7 @@ const Popup = () => {
       <div style={styles.searchContainer}>
         <input
           type="text"
-          placeholder="🔍 Search all data..."
+          placeholder=" Search all data..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           style={styles.searchInput}
